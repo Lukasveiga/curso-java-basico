@@ -22,5 +22,4 @@ public class Exercicio5 {
             System.out.println("Aprovado com distinção, parabéns!");
         }
     }
-    
 }
