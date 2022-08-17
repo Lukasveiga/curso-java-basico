@@ -12,16 +12,15 @@ public class Exercicio3 {
 
     public static void masculinoFeminino() {
 
-        System.out.println("Informe seu sexo: " +
-                            "\nF - Feminino\nM - Masculino");
-
         Scanner scan = new Scanner(System.in);
 
+        System.out.println("Informe seu sexo: " +
+                            "\nF - Feminino\nM - Masculino");
         String sexo = scan.nextLine();
 
-        if (sexo.toUpperCase().equals("F")) {
+        if (sexo.equalsIgnoreCase("F")) {
             System.out.println("Feminino");
-        } else if (sexo.toUpperCase().equals("M")) {
+        } else if (sexo.equalsIgnoreCase("M")) {
             System.out.println("Masculino");
         } else {
             System.out.println("Sexo inválido");
@@ -29,5 +28,4 @@ public class Exercicio3 {
 
         scan.close();
     }
-    
 }

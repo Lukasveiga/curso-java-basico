@@ -11,19 +11,18 @@ public class Exercicio2 {
     }
 
     public static void positivoNegativo() {
-        System.out.println("Por favor, insira um número: ");
 
         Scanner scan = new Scanner(System.in);
 
-        double num1 = scan.nextDouble();
+        System.out.println("Por favor, insira um número: ");
+        double num = scan.nextDouble();
 
-        if (num1 >= 0) {
-            System.out.println("Positivo");
+        if (num >= 0) {
+            System.out.println("O número informafo é positivo.");
         } else {
-            System.out.println("Negativo");
+            System.out.println("O número informafo é negativo.");
         }
 
         scan.close();
     }
-    
 }

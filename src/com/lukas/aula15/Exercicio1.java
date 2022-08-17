@@ -11,17 +11,18 @@ public class Exercicio1 {
     }
 
     public static void maiorNumero() {
-        System.out.println("Por favor, insira dois números: ");
+        
 
         Scanner scan = new Scanner(System.in);
-
+        System.out.println("Por favor, insira o primeiro número: ");
         int num1 = scan.nextInt();
+        System.out.println("Por favor, insira o segundo número: ");
         int num2 = scan.nextInt();
 
         if (num1 > num2) {
-            System.out.println(num1);
+            System.out.println("O número 1 é maior: " + num1);
         } else {
-            System.out.println(num2);
+            System.out.println("O número 2 é maior: " + num2);
         }
 
         scan.close();

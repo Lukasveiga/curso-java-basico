@@ -1,31 +1,39 @@
 package com.lukas.aula15;
 
-import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Exercicio4 {
 
     public static void main(String[] args) {
 
-        String letra = "T";
-        vogalConsoante(letra);
+        vogalConsoante();
         
     }
 
-    public static void vogalConsoante(String letra) {
-        ArrayList<String> vogais = new ArrayList<String>(5);
-        vogais.add("a");
-        vogais.add("e");
-        vogais.add("i");
-        vogais.add("o");
-        vogais.add("u");
+    public static void vogalConsoante() {
 
-        boolean check = vogais.contains(letra.toLowerCase());
+        Scanner scan = new Scanner(System.in);
 
-        if (check) {
-            System.out.println("Vogal");
+        System.out.println("Informe uma letra: ");
+        String letra = scan.nextLine();
+
+        String letraUpper = letra.toLowerCase();
+
+        if (letraUpper.length() > 1) {
+
+            System.out.println("Não é uma letra válida.");
+
         } else {
-            System.out.println("Consoante");
+        
+        switch (letraUpper) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u": System.out.println("Vogal"); break;
+            default:  System.out.println("Consoante");
+            }
         }
+        scan.close();
     }
-    
 }
