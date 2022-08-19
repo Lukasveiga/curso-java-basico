@@ -12,21 +12,30 @@ public class Exercicio2 {
 
     public static void usuarioSenha() {
 
+        String usuario;
+        String senha;
+
+        boolean informacoesValidas = false;
+
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Informe o seu usuario: ");
-        String usuario = scan.nextLine();
+        do {
+            System.out.println("Informe o seu usuario: ");
+            usuario = scan.nextLine();
 
-        System.out.println("Informe sua senha: ");
-        String senha = scan.nextLine();
-
-        while(usuario.equalsIgnoreCase(senha)) {
-            System.out.println("ERROR: Senha igual ao usuario.");
             System.out.println("Informe sua senha: ");
             senha = scan.nextLine();
-        } 
 
-        System.out.println("Informações cadastradas com sucesso!");
+            if (usuario.equalsIgnoreCase(senha)) {
+                System.out.println("ERROR: Senha igual ao usuario. Digite novamente.");
+
+            } else {
+                System.out.println("Informações cadastradas com sucesso!");
+                informacoesValidas = true;
+            } 
+
+        } while(!informacoesValidas); 
+        
         scan.close();
     }
 }
