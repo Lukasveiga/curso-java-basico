@@ -14,7 +14,6 @@ public class Exercicio13 {
 
         int base;
         int expoente;
-        int resultado = 0;
 
         Scanner scan = new Scanner(System.in);
 
@@ -24,11 +23,10 @@ public class Exercicio13 {
         System.out.println("informe o valor do expoente: ");
         expoente = scan.nextInt();
 
-        int baseMulti = base;
+        int resultado = base;
         
         for (int i = 1; i < expoente; i++) {
-            resultado = base*baseMulti;
-            baseMulti = resultado;
+            resultado *= base;
         }
         scan.close();
         System.out.println(base + "^" + expoente + " = " + resultado);
