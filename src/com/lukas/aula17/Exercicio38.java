@@ -19,6 +19,8 @@ public class Exercicio38 {
         double salario;
         double aumento = 0.015;
 
+        DecimalFormat format = new DecimalFormat("###,###.##");
+
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Informe o ano de início: ");
@@ -32,12 +34,9 @@ public class Exercicio38 {
             salario *=  (1 + aumento);
             aumento *=2;
             anoInicio++;
-        }
 
-        DecimalFormat df = new DecimalFormat();
-        df.setMaximumFractionDigits(2);
-        
-        System.out.println("Salário atual: R$ " + df.format(salario));
-        scan.close();
+            System.out.println("Ano " + anoInicio + " - Salário atual: R$ " + format.format(salario) + " - " + aumento*100 + "%" );
+        }
+        scan.close();  
     }
 }
