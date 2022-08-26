@@ -7,9 +7,13 @@ public class Pacotes {
 
     public static void main(String[] args) {
 
-        Carro carro = new Carro();
+        Carro carro1 = new Carro();
 
-        JogoDaVelha jogoTeste = new JogoDaVelha();
+        System.out.println(carro1);
+
+        JogoDaVelha jogoTeste1 = new JogoDaVelha();
+
+        System.out.println(jogoTeste1);
         
         
         
