@@ -4,13 +4,11 @@ public class TesteCarro {
 
     public static void main(String[] args) {
 
-        Carro carro1 = new Carro("Fiat", "Fusca", 4, 80, 0.2);
-
-        carro1.mostrarInfo();
-
-        Carro carro2 = new Carro("Audi", "A3", 4, 120, 0.5);
+        Carro carro2 = new Carro("Audi", "A3");  // 'default' --> numPassageiros = 10; capCombustivel = 100; and consumoCombustivel = 0.2;
+        Carro carro3 = new Carro();
 
         carro2.mostrarInfo();
+        carro3.mostrarInfo();
         
     }
     
