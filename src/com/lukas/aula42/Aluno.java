@@ -1,6 +1,6 @@
-package com.lukas.aula41;
+package com.lukas.aula42;
 
-public class Aluno extends Pessoa{
+public class Aluno{
 
     private String curso;
     private double[] notas;
@@ -8,7 +8,7 @@ public class Aluno extends Pessoa{
     public Aluno() { }
 
     public Aluno(String nome, String endereco, String telefone, String curso, double[] notas) {
-        super(nome, endereco, telefone);
+        //super(nome, endereco, telefone);
         this.curso = curso;
         this.notas = notas;
     }
@@ -35,18 +35,18 @@ public class Aluno extends Pessoa{
     }
 
     public void metodoQualquer() {
-        super.setCpf("1354645");
+        //super.setCpf("1354645");
     }
 
-    @Override
+    //@Override
     public String obterEtiquetaEndereco() {
         String s = "Endereço do aluno: ";
-        s += super.getEndereco();
+       // s += super.getEndereco();
 
         return s;
     }
 
-    @Override
+    //@Override
     public void imprimirEndereco() {
         System.out.println(this.obterEtiquetaEndereco());
         

@@ -1,6 +1,8 @@
-package com.lukas.aula41;
+package com.lukas.aula43;
 
-public class Aluno extends Pessoa{
+import java.util.Arrays;
+
+public class Aluno{
 
     private String curso;
     private double[] notas;
@@ -8,7 +10,7 @@ public class Aluno extends Pessoa{
     public Aluno() { }
 
     public Aluno(String nome, String endereco, String telefone, String curso, double[] notas) {
-        super(nome, endereco, telefone);
+        //super(nome, endereco, telefone);
         this.curso = curso;
         this.notas = notas;
     }
@@ -35,23 +37,45 @@ public class Aluno extends Pessoa{
     }
 
     public void metodoQualquer() {
-        super.setCpf("1354645");
+        //super.setCpf("1354645");
     }
 
-    @Override
+    //@Override
     public String obterEtiquetaEndereco() {
         String s = "Endereço do aluno: ";
-        s += super.getEndereco();
+       // s += super.getEndereco();
 
         return s;
     }
 
-    @Override
+    //@Override
     public void imprimirEndereco() {
         System.out.println(this.obterEtiquetaEndereco());
         
     }
-    
+
+    @Override
+    public String toString() {
+        return "Aluno [curso=" + curso + ", notas=" + Arrays.toString(notas) + "]";
+    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Aluno other = (Aluno) obj;
+        if (curso.equalsIgnoreCase(other.getCurso())) {
+            return true;
+        }
+        return false;
+    }
+
+
 }
 
 

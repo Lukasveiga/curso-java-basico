@@ -1,6 +1,6 @@
-package com.lukas.aula41;
+package com.lukas.aula42;
 
-public class Professor extends Pessoa{
+public class Professor{
     
     private double salario;
     private String nomeCurso;
@@ -30,15 +30,15 @@ public class Professor extends Pessoa{
         return 0;
     }
 
-    @Override
+    //@Override
     public String obterEtiquetaEndereco() {
         String s = "Endereço do professor: ";
-        s += super.getEndereco();
+        //s += super.getEndereco();
 
         return s;
     }
 
-    @Override
+    //@Override
     public void imprimirEndereco() {
         System.out.println("Imprimindo endereço professor.");
         System.out.println(this.obterEtiquetaEndereco());
