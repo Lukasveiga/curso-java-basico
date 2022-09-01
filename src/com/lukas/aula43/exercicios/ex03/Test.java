@@ -8,15 +8,18 @@ public class Test {
         Animal tubarao = new Peixe("Cinza", "Tubarão", "Aquático", 0, 1.5, 300, "Barbatanas e Cauda");
         Animal urso = new Mamifero("Vermelho", "Urso-do-canadá", "Terrestre", 4, 0.5, 180, "Mel");
 
-        System.out.println("Zoo");
-        System.out.println("-----------------------------------");
-        System.out.println(camelo);
-        System.out.println("-----------------------------------");
-        System.out.println(tubarao);
-        System.out.println("-----------------------------------");
-        System.out.println(urso);
+        Animal[] animais = new Animal[3];
+        animais[0] = camelo;
+        animais[1] = tubarao;
+        animais[2] = urso;
 
-        
+        System.out.println("Zoo");
+        System.out.println("-------------------------------------");
+        for (Animal animal: animais) {
+            System.out.println(animal);
+            System.out.println("-------------------------------------");
+        }
+  
     }
     
 }
