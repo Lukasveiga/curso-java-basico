@@ -1,6 +1,6 @@
 package com.lukas.aula43.exercicios.ex02;
 
-public class PessoaFisica extends CadastroRF{
+public class PessoaFisica extends Contribuinte{
 
     private double deducao;
 
@@ -20,31 +20,33 @@ public class PessoaFisica extends CadastroRF{
     // ----------------------------------------------------
     @Override
     public double calcularImposto() {
-        if (this.getRenda() <= 1400) {
-            deducao = 0;
-            return this.getRenda() * 0;
-        } else if (this.getRenda() > 1400 && this.getRenda() <= 2100) {
-            deducao = 100;
-            return this.getRenda() * 0.10;
-        } else if (this.getRenda() > 2100 && this.getRenda() <= 2800) {
-            deducao = 270;
-            return this.getRenda() * 0.15;
-        } else if (this.getRenda() > 2800 && this.getRenda() <= 3600) {
-            deducao = 500;
-            return this.getRenda() * 0.25;
-        } else if (this.getRenda() > 3600) {
-            deducao = 700;
-            return this.getRenda() * 0.30;
+
+        double renda  = this.getRenda();
+
+        if (renda <= 1400) {
+            setDeducao(0);
+            return renda * 0;
+        } else if (renda > 1400 && renda <= 2100) {
+            setDeducao(100);
+            return renda * 0.10;
+        } else if (renda > 2100 && renda <= 2800) {
+            setDeducao(270);
+            return renda * 0.15;
+        } else if (renda > 2800 && renda <= 3600) {
+            setDeducao(500);
+            return renda * 0.25;
+        } else if (renda > 3600) {
+            setDeducao(700);
+            return renda * 0.30;
         }
         return 0;
     }
 
     @Override
     public String toString() {
-        String s = "Nome Completo: " + this.getNome() + "\n";
-        s += "Renda bruta: R$ " + this.getRenda() + "\n";
-        s += "Imposto a ser pago : R$ " + calcularImposto() + "\n";
-        s += "Dedução: R$ " + this.getDeducao();
+        String s = super.toString() + "\n";
+        s += "Dedução: R$ " + this.getDeducao() + "\n";
+        s += "Imposto final a ser pago: R$ " + (calcularImposto() - getDeducao());
         return s;
     }
 

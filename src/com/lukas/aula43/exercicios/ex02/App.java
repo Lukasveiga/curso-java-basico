@@ -5,7 +5,7 @@ public class App {
     public static void main(String[] args) {
 
         System.out.println("----- Exemplo Pessoa Jurídica ------");
-        CadastroRF pessoaJuridica = new PessoaJuridica();
+        Contribuinte pessoaJuridica = new PessoaJuridica();
         pessoaJuridica.setNome("Java Estudos LTDA");
         pessoaJuridica.setRenda(15000);
 
@@ -13,7 +13,7 @@ public class App {
         System.out.println(pessoaJuridica);
 
         System.out.println("----- Exemplo 1 Pessoa Física ------");
-        CadastroRF pessoaFisica = new PessoaFisica();
+        Contribuinte pessoaFisica = new PessoaFisica();
         pessoaFisica.setNome("Lukas");
         pessoaFisica.setRenda(1500);
 
@@ -21,7 +21,7 @@ public class App {
         System.out.println(pessoaFisica);
 
         System.out.println("----- Exemplo 2 Pessoa Física ------");
-        CadastroRF pessoaFisica2 = new PessoaFisica();
+        Contribuinte pessoaFisica2 = new PessoaFisica();
         pessoaFisica2.setNome("Marcos");
         pessoaFisica2.setRenda(3800);
 
