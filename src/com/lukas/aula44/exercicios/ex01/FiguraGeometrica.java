@@ -24,4 +24,10 @@ public abstract class FiguraGeometrica {
     public void setCor(String cor) {
         this.cor = cor;
     }
+
+    public String toString() {
+        String s = "Nome: " + nome + "\n";
+        s += "Cor: " + cor;
+        return s;
+    }
 }
