@@ -28,4 +28,11 @@ public class Circulo extends Figura2D{
         return PI * this.raio * this.raio;
     }
 
+    @Override
+    public String toString() {
+        String s = super.toString();
+        s += "\nÁrea: " + calcularArea();
+        return s;
+    }
+
 }
