@@ -1,15 +1,19 @@
+<div style="display: inline_block"><br>
+  <img align="center" alt="Lukas-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/java/java-original.svg">
+</div>
+
 *https://loiane.training/curso/java-basico*
 
-###Curso de Java Básico (Java SE).###
+**Curso de Java Básico (Java SE).**
 
 No módulo 1 você vai aprender: <br>
-    <space><space>* Lógica de programação básica <br>
-    <space><space>* Orientação a Objetos <br>
-    <space><space>* Tratamento de Erros <br>
+&nbsp; - Lógica de programação básica <br>
+&nbsp; - Orientação a Objetos <br>
+&nbsp; - Tratamento de Erros <br>
 Outros módulos desse curso: <br> 
-    <space><space>* Classes utilitárias que todo desenvolvedor deve saber usar <br>
-    <space><space>* Leitura e criação de arquivos <br> 
-    <space><space>* Collections (Estruturas de dados do Java) <br>
-    <space><space>* Interface gráfica com Swing e JavaFX <br> 
-    <space><space>* Acesso ao banco de dados <br> 
+&nbsp; - Classes utilitárias que todo desenvolvedor deve saber usar <br>
+&nbsp; - Leitura e criação de arquivos <br> 
+&nbsp; - Collections (Estruturas de dados do Java) <br>
+&nbsp; - Interface gráfica com Swing e JavaFX <br> 
+&nbsp; - Acesso ao banco de dados <br> 
 **Nível**: Iniciante ao Intermediário <br> 
