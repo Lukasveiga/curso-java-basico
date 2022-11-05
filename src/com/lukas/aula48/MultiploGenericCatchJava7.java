@@ -10,7 +10,7 @@ public class MultiploGenericCatchJava7 {
         for (int i = 0; i < numeros.length; i++) {
             try{
                 System.out.println(numeros[i] + "/" + denom[i] + " = " + (numeros[i]/denom[i]));
-            } catch(ArithmeticException |  ArrayIndexOutOfBoundsException e) {
+            } catch(ArithmeticException | ArrayIndexOutOfBoundsException e) {
                 System.out.println("Aconteceu um erro.");
             } 
         }

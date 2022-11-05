@@ -14,15 +14,16 @@ public class UsandoThrows {
             System.out.println("Entrada inválida.");  // Mensagem mais amigável para o usuário (tbm uma questão de segurança/exposição do código).
             e.printStackTrace();  // mensagem a ser adicionada ao log.
         }
+
+        System.out.println("Programa finalizado.");
         
     }
 
-    public static double leNumero() throws Exception{
-        Scanner scan = new Scanner(System.in);
-        double numero = scan.nextDouble();
-        scan.close();
-        return numero;
-        
+    private static double leNumero() throws Exception{
+        try (Scanner scan = new Scanner(System.in)) {
+            double numero = scan.nextDouble();
+            return numero;
+        }
     }
     
 }

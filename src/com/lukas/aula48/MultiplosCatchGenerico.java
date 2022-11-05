@@ -13,6 +13,7 @@ public class MultiplosCatchGenerico {
             } catch(ArithmeticException e) {
                 System.out.println("Erro ao dividir por zero.");
             } catch(Throwable e) {
+                // Don't do this
                 System.out.println("Ocorreu um erro.");
             }
             
